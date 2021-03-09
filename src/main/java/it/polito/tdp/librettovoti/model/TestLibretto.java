@@ -1,0 +1,25 @@
+package it.polito.tdp.librettovoti.model;
+
+import java.time.LocalDate;
+
+public class TestLibretto {
+
+	public static void main(String[] args ) {
+		
+		System.out.println("inizio test");
+		Libretto libretto = new Libretto();
+		
+		Voto voto1 = new Voto("Analisi 1", 30, LocalDate.of(2019,  2, 15));
+		Voto voto2 = new Voto("fisica 1", 30, LocalDate.of(2019,  2, 15));
+		Voto voto3 = new Voto("informatica", 30, LocalDate.of(2019,  2, 15));
+
+		libretto.add(voto1);
+		libretto.add(voto2);
+		libretto.add(voto3);
+		
+		System.out.println(libretto.toString());
+
+	
+	}
+	
+}
